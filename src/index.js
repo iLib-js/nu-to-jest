@@ -56,6 +56,11 @@ const regexps = [
        replaceOld: "expect($1).toBe($2)"
     },
     {
+       search: /test\.notEqual\((.*),\s+([^)]*)\)/g,
+       replaceModern: "expect($1).not.toBe($2)",
+       replaceOld: "expect($1).not.toBe($2)"
+    },
+    {
        search: /test\.deepEqual\((.*),\s+([^)]*)\)/g,
        replaceModern: "expect($1).toStrictEqual($2)",
        replaceOld: "expect($1).toStrictEqual($2)"
