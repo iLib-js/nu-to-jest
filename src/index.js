@@ -111,7 +111,7 @@ const regexps = [
        replaceOld: "$1.test.js"
     },
     {
-       search: /\s+\n/g,
+       search: /[ \t]+\n/g,
        replaceModern: "\n",
        replaceOld: "\n"
     },
